@@ -44,9 +44,19 @@ const Estre = () => {
                e energia para a produção de bens. É a atual responsável pelo controle dos caminhões de lixo de várias cidades, inclusive de taboão da serra
           </Text>
           <View style={styles.imgBetween}>
-          <Image style={[styles.imgInfo, {margin:5}]} source={require('../../imagens/cardVidro.png')}/>
-          <Image style={[styles.imgInfo, {margin:5}]} source={require('../../imagens/cardAluminio.png')}/>
-          <Image style={[styles.imgInfo, {margin:5}]} source={require('../../imagens/cardPapel.png')}/>
+            <View>
+              <Image style={styles.imgInfo} source={require('../../imagens/cardVidro.png')}/>
+              <Text style={{color:'#fff', alignItems: 'center', left:30}}>Vidro</Text>
+              <Text>Vidro</Text>
+            </View>
+            <View>
+              <Image style={styles.imgInfo} source={require('../../imagens/cardAluminio.png')}/>
+              <Text style={{color:'#fff', alignItems: 'center', left:20}}>Alumínio</Text>
+            </View>
+            <View>
+              <Image style={styles.imgInfo} source={require('../../imagens/cardPapel.png')}/>
+              <Text style={{color:'#fff', alignItems: 'center', left:30}}>Papel</Text>
+            </View>
           </View>
         </View>
       </ScrollView>
@@ -69,7 +79,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 32,
-    paddingTop: 35,
+    paddingTop: 35
   },
 
   pointImage: {
@@ -77,18 +87,18 @@ const styles = StyleSheet.create({
     height: 180,
     resizeMode: 'cover',
     borderRadius: 10,
-    marginTop: 25,
+    marginTop: 20,
   },
 
   pointName: {
     color: '#00000',
     fontSize: 28,
-    marginTop: 24,
+    marginTop: 15,
   },
 
 
   address: {
-    marginTop: 32,
+    marginTop: 15,
   },
   
   addressTitle: {
@@ -98,24 +108,30 @@ const styles = StyleSheet.create({
 
   addressContent: {
     lineHeight: 24,
-    marginTop: 8,
+    marginTop: 4,
     color: '#6C6C80'
   },
 
   description: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 20,
-    lineHeight: 25,
+    marginTop: 15,
+    lineHeight: 30,
     textAlign:'justify',
     color: '2A2A2A'
   },
+
   imgInfo:{
     width: 90,
     height: 90,
-    marginBottom: 20,
+    marginBottom: 5,
     resizeMode: 'stretch',
-    alignItems: 'center'
+    alignItems: 'center',
+    margin:5
+  },
+
+  textInfo:{
+
   },
 
   imgBetween: {
@@ -128,10 +144,10 @@ const styles = StyleSheet.create({
   footer: {
     borderTopWidth: StyleSheet.hairlineWidth,
     borderColor: '#999',
-    paddingVertical: 20,
+    paddingVertical: 15,
     paddingHorizontal: 32,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
     
   },
   
