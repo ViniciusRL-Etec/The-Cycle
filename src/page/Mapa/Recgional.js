@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { View, StyleSheet, Text, Image, TouchableOpacity, SafeAreaView, useColorScheme, ScrollView } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import * as MailComposer from 'expo-mail-composer';
-import openURL from './Linking.js'
+import openURL from './Linking.js';
 
 
 const Recgional = () => {
